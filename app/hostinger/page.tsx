@@ -478,7 +478,7 @@ const tabItems = [
 
 export default function HostingerPage() {
   const [activeTab, setActiveTab] = React.useState("Web hosting")
-  const [selectedPeriod, setSelectedPeriod] = React.useState<Period>(12)
+  const [selectedPeriod, setSelectedPeriod] = React.useState<Period>(48)
   const [timeLeft, setTimeLeft] = React.useState({
     days: 1,
     hours: 14,
