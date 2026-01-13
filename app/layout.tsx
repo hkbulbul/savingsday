@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, DM_Sans } from "next/font/google";
+import Script from "next/script";
 import React from "react";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
@@ -23,6 +24,9 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "SavingsDay - Hostinger Coupons",
   description: "Get the best Hostinger deals and coupon codes.",
+  other: {
+    "msvalidate.01": "240C6768F9B045B95548549506D5D70D",
+  },
 };
 
 export default function RootLayout({
@@ -36,6 +40,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} antialiased`}
         suppressHydrationWarning
       >
+        <Script id="clarity-script" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "tyh566z4eg");
+          `}
+        </Script>
         <SiteHeader />
         {children}
       </body>
