@@ -90,20 +90,20 @@ const plans: Plan[] = [
       12: {
         originalPrice: "219.00",
         price: "175.20",
-        renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb777-7e64-7168-828d-fbd54963cc64"
+        renewal: "Get 48 months for ₹4,953.60 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb78f-a418-7335-ad40-ea468f938245"
       },
       24: {
-        originalPrice: "219.00",
-        price: "175.20",
-        renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb777-7e64-7168-828d-fbd54963cc64"
+        originalPrice: "179.00",
+        price: "143.20",
+        renewal: "Get 48 months for ₹4,953.60 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb78e-9d04-70b0-a75d-ae2e9f4538ca"
       },
       48: {
-        originalPrice: "219.00",
-        price: "175.20",
-        renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb777-7e64-7168-828d-fbd54963cc64"
+        originalPrice: "129.00",
+        price: "103.20",
+        renewal: "Get 48 months for ₹4,953.60 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb78b-30dd-70ec-b8ab-f4529aaf49d8"
       }
     },
     features: [
@@ -127,20 +127,20 @@ const plans: Plan[] = [
       12: {
         originalPrice: "379.00",
         price: "303.20",
-        renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb777-d508-70cc-b80f-176f4beec2ab"
+        renewal: "Get 48 months for ₹7,641.60 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb790-fee5-733f-a60c-fe2c2ee365bf"
       },
       24: {
-        originalPrice: "379.00",
-        price: "303.20",
-        renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb777-d508-70cc-b80f-176f4beec2ab"
+        originalPrice: "299.00",
+        price: "239.20",
+        renewal: "Get 48 months for ₹7,641.60 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb78e-e454-73af-a8fa-3295ed798de8"
       },
       48: {
-        originalPrice: "379.00",
-        price: "303.20",
-        renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb777-d508-70cc-b80f-176f4beec2ab"
+        originalPrice: "199.00",
+        price: "159.20",
+        renewal: "Get 48 months for ₹7,641.60 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb78c-6ae2-712a-a50e-403ae3296853"
       }
     },
     features: [
@@ -166,20 +166,20 @@ const plans: Plan[] = [
       12: {
         originalPrice: "799.00",
         price: "639.20",
-        renewal: "Get 48 months for ₹25,034.40 (regular price ₹81,552.00). Renews at ₹1,599.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Acloud_economy&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb778-26b2-7087-ac83-392bf26bf6a4"
+        renewal: "Get 48 months for ₹21,081.60 (regular price ₹81,552.00). Renews at ₹1,599.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Acloud_economy&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb791-61e0-733f-873b-cc642fe6825e"
       },
       24: {
-        originalPrice: "799.00",
-        price: "639.20",
-        renewal: "Get 48 months for ₹25,034.40 (regular price ₹81,552.00). Renews at ₹1,599.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Acloud_economy&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb778-26b2-7087-ac83-392bf26bf6a4"
+        originalPrice: "699.00",
+        price: "559.20",
+        renewal: "Get 48 months for ₹21,081.60 (regular price ₹81,552.00). Renews at ₹1,599.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Acloud_economy&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb78f-46e4-717c-ab79-3086bab7175c"
       },
       48: {
-        originalPrice: "799.00",
-        price: "639.20",
-        renewal: "Get 48 months for ₹25,034.40 (regular price ₹81,552.00). Renews at ₹1,599.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Acloud_economy&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb778-26b2-7087-ac83-392bf26bf6a4"
+        originalPrice: "549.00",
+        price: "439.20",
+        renewal: "Get 48 months for ₹21,081.60 (regular price ₹81,552.00). Renews at ₹1,599.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Acloud_economy&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb78d-e879-724e-91bf-434254b87903"
       }
     },
     features: [
@@ -206,22 +206,22 @@ const builderPlans: Plan[] = [
     popular: false,
     periods: {
       12: {
-        originalPrice: "153.19",
-        price: "122.55",
-        renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb779-00d5-72f6-9043-bb1fe776bca0&product_type=website-builder"
+        originalPrice: "219.00",
+        price: "175.20",
+        renewal: "Get 48 months for ₹4,953.60 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb797-c465-724d-babd-04c4aa77eb66&product_type=website-builder"
       },
       24: {
-        originalPrice: "153.19",
-        price: "122.55",
-        renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb779-00d5-72f6-9043-bb1fe776bca0&product_type=website-builder"
+        originalPrice: "179.00",
+        price: "143.20",
+        renewal: "Get 48 months for ₹4,953.60 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb797-1a36-7361-ad81-93e3025adf36&product_type=website-builder"
       },
       48: {
-        originalPrice: "153.19",
-        price: "122.55",
-        renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb779-00d5-72f6-9043-bb1fe776bca0&product_type=website-builder"
+        originalPrice: "129.00",
+        price: "103.20",
+        renewal: "Get 48 months for ₹4,953.60 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb796-5507-7129-9cf2-bd9e2781bce5&product_type=website-builder"
       }
     },
     features: [
@@ -245,22 +245,22 @@ const builderPlans: Plan[] = [
     popular: true,
     periods: {
       12: {
-        originalPrice: "236.31",
-        price: "189.05",
-        renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb779-67e2-723d-b986-1dd97ec49fd3&product_type=website-builder"
+        originalPrice: "379.00",
+        price: "303.20",
+        renewal: "Get 48 months for ₹7,641.60 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb797-ff99-71a2-a179-c76a8300905a&product_type=website-builder"
       },
       24: {
-        originalPrice: "236.31",
-        price: "189.05",
-        renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb779-67e2-723d-b986-1dd97ec49fd3&product_type=website-builder"
+        originalPrice: "299.00",
+        price: "239.20",
+        renewal: "Get 48 months for ₹7,641.60 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb797-5dd5-7202-b043-3b1794f417a2&product_type=website-builder"
       },
       48: {
-        originalPrice: "236.31",
-        price: "189.05",
-        renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
-        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb779-67e2-723d-b986-1dd97ec49fd3&product_type=website-builder"
+        originalPrice: "199.00",
+        price: "159.20",
+        renewal: "Get 48 months for ₹7,641.60 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb796-c31c-702b-a01f-21c3fc7410cf&product_type=website-builder"
       }
     },
     features: [
