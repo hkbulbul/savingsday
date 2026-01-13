@@ -42,7 +42,7 @@ interface Plan {
   discount: string
   popular: boolean
   features: Feature[]
-  periods: Record<Period, Pricing>
+  periods: Partial<Record<Period, Pricing>>
 }
 
 const plans: Plan[] = [
@@ -293,22 +293,16 @@ const vpsPlans: Plan[] = [
     popular: false,
     periods: {
       12: {
-        originalPrice: "473.81",
-        price: "379.05",
+        originalPrice: "399.00",
+        price: "319.20",
         renewal: "Renews at ₹739.00/mo for 2 years. Cancel anytime.",
-        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_1&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-2a93-706e-a33f-dfca6c2e90b7"
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_1&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb7ae-f45e-71b1-a69a-b37eb03f02b2"
       },
       24: {
-        originalPrice: "473.81",
-        price: "379.05",
+        originalPrice: "399.00",
+        price: "319.20",
         renewal: "Renews at ₹739.00/mo for 2 years. Cancel anytime.",
-        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_1&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-2a93-706e-a33f-dfca6c2e90b7"
-      },
-      48: {
-        originalPrice: "473.81",
-        price: "379.05",
-        renewal: "Renews at ₹739.00/mo for 2 years. Cancel anytime.",
-        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_1&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-2a93-706e-a33f-dfca6c2e90b7"
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_1&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb7ad-c06c-73e3-8c0e-479e8d30f9ee"
       }
     },
     features: [
@@ -325,22 +319,16 @@ const vpsPlans: Plan[] = [
     popular: true,
     periods: {
       12: {
-        originalPrice: "651.94",
-        price: "521.55",
+        originalPrice: "549.00",
+        price: "439.20",
         renewal: "Renews at ₹999.00/mo for 2 years. Cancel anytime.",
-        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_2&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-5e53-7206-a00a-5f200fd06834"
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_2&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb7af-349e-7364-b364-fd61b8d78684"
       },
       24: {
-        originalPrice: "651.94",
-        price: "521.55",
+        originalPrice: "549.00",
+        price: "439.20",
         renewal: "Renews at ₹999.00/mo for 2 years. Cancel anytime.",
-        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_2&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-5e53-7206-a00a-5f200fd06834"
-      },
-      48: {
-        originalPrice: "651.94",
-        price: "521.55",
-        renewal: "Renews at ₹999.00/mo for 2 years. Cancel anytime.",
-        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_2&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-5e53-7206-a00a-5f200fd06834"
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_2&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb7ae-47eb-72ea-b399-17958ec7e1bc"
       }
     },
     features: [
@@ -357,22 +345,16 @@ const vpsPlans: Plan[] = [
     popular: false,
     periods: {
       12: {
-        originalPrice: "889.44",
-        price: "711.55",
+        originalPrice: "749.00",
+        price: "599.20",
         renewal: "Renews at ₹1,999.00/mo for 2 years. Cancel anytime.",
-        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_4&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77b-40c6-7231-8e60-b1fa32fa0f09"
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_4&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb7af-736a-71e9-80d2-c4987121e29b"
       },
       24: {
-        originalPrice: "889.44",
-        price: "711.55",
+        originalPrice: "749.00",
+        price: "599.20",
         renewal: "Renews at ₹1,999.00/mo for 2 years. Cancel anytime.",
-        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_4&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77b-40c6-7231-8e60-b1fa32fa0f09"
-      },
-      48: {
-        originalPrice: "889.44",
-        price: "711.55",
-        renewal: "Renews at ₹1,999.00/mo for 2 years. Cancel anytime.",
-        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_4&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77b-40c6-7231-8e60-b1fa32fa0f09"
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_4&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb7ae-732d-7376-9a55-5c699b5dd1cd"
       }
     },
     features: [
@@ -389,22 +371,16 @@ const vpsPlans: Plan[] = [
     popular: false,
     periods: {
       12: {
-        originalPrice: "1780.06",
-        price: "1424.05",
+        originalPrice: "1499.00",
+        price: "1199.20",
         renewal: "Renews at ₹3,999.00/mo for 2 years. Cancel anytime.",
-        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_8&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-c256-7069-b2f3-d86ba44aa23e"
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_8&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb7af-b3b0-704d-bc14-87263f7a2b5a"
       },
       24: {
-        originalPrice: "1780.06",
-        price: "1424.05",
+        originalPrice: "1499.00",
+        price: "1199.20",
         renewal: "Renews at ₹3,999.00/mo for 2 years. Cancel anytime.",
-        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_8&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-c256-7069-b2f3-d86ba44aa23e"
-      },
-      48: {
-        originalPrice: "1780.06",
-        price: "1424.05",
-        renewal: "Renews at ₹3,999.00/mo for 2 years. Cancel anytime.",
-        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_8&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-c256-7069-b2f3-d86ba44aa23e"
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_8&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb7ae-96a6-7380-ab49-4c4994eb65c4"
       }
     },
     features: [
@@ -499,7 +475,8 @@ export default function HostingerPage() {
 
   const formatNumber = (num: number) => num.toString().padStart(2, '0')
 
-  const currentPlans = activeTab === "Web hosting" ? plans : activeTab === "Website Builder" ? builderPlans : activeTab === "VPS hosting" ? vpsPlans : []
+  const currentPlans = (activeTab === "Web hosting" ? plans : activeTab === "Website Builder" ? builderPlans : activeTab === "VPS hosting" ? vpsPlans : [])
+    .filter(plan => plan.periods[selectedPeriod])
 
   return (
     <main className="min-h-screen pt-16 pb-20 bg-white dark:bg-black font-sans antialiased text-zinc-900 dark:text-zinc-100">
@@ -518,13 +495,16 @@ export default function HostingerPage() {
 
             <div className="flex flex-col gap-4">
               <div className="flex items-baseline gap-2 flex-wrap group relative w-fit">
-                <span className="text-lg font-medium text-zinc-400 line-through decoration-zinc-400/50 cursor-help">₹ {plans[0].periods[selectedPeriod].originalPrice}</span>
+                <span className="text-lg font-medium text-zinc-400 line-through decoration-zinc-400/50 cursor-help">₹ {plans[0].periods[selectedPeriod]?.originalPrice || plans[0].periods[12]?.originalPrice || "0.00"}</span>
                 <div className="flex items-baseline gap-1 cursor-help">
                   <span className="text-xl font-medium text-[#2f1c6a] dark:text-white">₹</span>
-                  <span className="text-5xl font-bold text-[#2f1c6a] dark:text-white">{plans[0].periods[selectedPeriod].price}</span>
+                  <span className="text-5xl font-bold text-[#2f1c6a] dark:text-white">{plans[0].periods[selectedPeriod]?.price || plans[0].periods[12]?.price || "0.00"}</span>
                   <span className="text-lg text-zinc-400">/mo</span>
                 </div>
-                <PriceBreakdown original={plans[0].periods[selectedPeriod].originalPrice} final={plans[0].periods[selectedPeriod].price} />
+                <PriceBreakdown
+                  original={plans[0].periods[selectedPeriod]?.originalPrice || plans[0].periods[12]?.originalPrice || "0.00"}
+                  final={plans[0].periods[selectedPeriod]?.price || plans[0].periods[12]?.price || "0.00"}
+                />
               </div>
               <p className="text-xl md:text-2xl font-bold text-[#2f1c6a] dark:text-indigo-400">
                 +3 months free
@@ -619,122 +599,134 @@ export default function HostingerPage() {
 
         {/* Pricing Grid */}
         {currentPlans.length === 0 ? (
-          <div className="w-full h-64 flex items-center justify-center text-zinc-400" >
-            Coming Soon
+          <div className="w-full h-64 flex flex-col items-center justify-center text-zinc-400 gap-4" >
+            <div className="p-4 bg-zinc-50 dark:bg-zinc-900/50 rounded-2xl border border-dashed border-zinc-200 dark:border-zinc-800">
+              <Zap className="h-8 w-8 mb-2 opacity-20" />
+            </div>
+            <p className="font-medium">This plan is not available for the selected period.</p>
+            <button
+              onClick={() => setSelectedPeriod(24)}
+              className="text-[#673de6] font-bold text-sm hover:underline"
+            >
+              Switch to 24 Months
+            </button>
           </div>
         ) : (
           <div className={cn(
             "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full px-4",
             activeTab === "Website Builder" && "lg:grid-cols-2 max-w-4xl mx-auto"
           )}>
-            {currentPlans.map((plan) => (
-              <div
-                key={plan.title}
-                className={cn(
-                  "relative flex flex-col p-8 rounded-[2rem] bg-white dark:bg-zinc-900 border transition-all duration-300",
-                  plan.popular
-                    ? "border-[#673de6] shadow-xl shadow-indigo-500/10 lg:scale-[1.02] z-10"
-                    : "border-zinc-100 dark:border-zinc-800"
-                )}
-              >
-                {plan.popular && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#673de6] text-white text-[10px] font-bold px-4 py-1.5 rounded-full tracking-wider">
-                    MOST POPULAR
-                  </div>
-                )}
-
-                <div className="mb-6">
-                  <span className="inline-block bg-[#e5e7ff] text-[#2f1c6a] text-[10px] font-bold px-2 py-1 rounded-md mb-3">
-                    {plan.discount}
-                  </span>
-                  <h3 className="text-2xl font-bold text-[#2f1c6a] dark:text-white mb-2">{plan.title}</h3>
-                  <p className="text-xs text-zinc-500 leading-relaxed min-h-[2.5rem]">{plan.description}</p>
-                </div>
-
-                <div className="flex flex-col mb-8 group relative w-fit">
-                  <span className="text-sm font-medium text-zinc-400 line-through decoration-zinc-400/50 mb-1 cursor-help">
-                    ₹ {plan.periods[selectedPeriod].originalPrice}
-                  </span>
-                  <div className="flex items-baseline gap-1 cursor-help">
-                    <span className="text-lg font-bold text-[#2f1c6a] dark:text-white">₹</span>
-                    <span className="text-4xl font-bold text-[#2f1c6a] dark:text-white">{plan.periods[selectedPeriod].price}</span>
-                    <span className="text-sm font-medium text-zinc-400 lowercase ml-1">/mo</span>
-                  </div>
-                  <PriceBreakdown original={plan.periods[selectedPeriod].originalPrice} final={plan.periods[selectedPeriod].price} />
-                </div>
-
-                <a
-                  href={plan.periods[selectedPeriod].link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+            {currentPlans.map((plan) => {
+              const currentPricing = plan.periods[selectedPeriod]!
+              return (
+                <div
+                  key={plan.title}
                   className={cn(
-                    "w-full py-4 rounded-xl font-bold text-sm mb-6 transition-all active:scale-95 text-center flex items-center justify-center",
+                    "relative flex flex-col p-8 rounded-[2rem] bg-white dark:bg-zinc-900 border transition-all duration-300",
                     plan.popular
-                      ? "bg-[#673de6] text-white hover:bg-[#5832cc]"
-                      : "bg-white dark:bg-zinc-800 border-2 border-[#673de6] text-[#673de6] dark:text-indigo-400 hover:bg-[#f8f6ff]"
+                      ? "border-[#673de6] shadow-xl shadow-indigo-500/10 lg:scale-[1.02] z-10"
+                      : "border-zinc-100 dark:border-zinc-800"
                   )}
                 >
-                  Use coupon
-                </a>
-
-                <p className="text-[10px] leading-relaxed text-zinc-400 mb-8 pb-8 border-b border-zinc-50 dark:border-zinc-800">
-                  {plan.periods[selectedPeriod].renewal}
-                </p>
-
-                <div className="space-y-4 flex-grow">
-                  {plan.features.map((feature, idx) => (
-                    <div key={idx} className="flex gap-3 items-start group">
-                      {feature.type === "success" || feature.type === "header" ? (
-                        <CheckIcon />
-                      ) : (
-                        <GrayIcon>
-                          {feature.icon === "world" && <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" className="h-4 w-4"><path fill="currentColor" fillRule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm-.76-7.748V3.296c-1.14 1.236-1.775 2.6-1.944 3.96l1.944-.004Zm0 1.5-1.942.004c.17 1.356.805 2.715 1.942 3.947v-3.95ZM3.786 7.26c.142-1.44.697-2.844 1.642-4.122a5.504 5.504 0 0 0-2.879 4.124l1.237-.002ZM2.552 8.76l1.236-.002c.145 1.433.7 2.83 1.64 4.104A5.504 5.504 0 0 1 2.552 8.76ZM8.74 8.75l1.975-.003c-.17 1.371-.815 2.747-1.975 3.99V8.75Zm1.974-1.503-1.974.003V3.263c1.157 1.241 1.802 2.614 1.974 3.983Zm1.51 1.497c-.141 1.435-.694 2.835-1.633 4.11a5.504 5.504 0 0 0 2.86-4.113l-1.226.003Zm1.224-1.503-1.225.003c-.144-1.43-.696-2.825-1.632-4.096a5.504 5.504 0 0 1 2.857 4.093Z" clipRule="evenodd"></path></svg>}
-                          {feature.icon === "minus" && <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" className="h-4 w-4"><path fill="currentColor" d="M3.993 8c0 .414.335.75.75.75h6.541a.75.75 0 0 0 0-1.5H4.743a.75.75 0 0 0-.75.75Z"></path></svg>}
-                          {feature.icon === "disk" && <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" className="h-4 w-4"><path fill="currentColor" fillRule="evenodd" d="M2.75 3.5c0-.598.279-1.081.655-1.439.366-.347.842-.598 1.332-.781C5.72.912 6.938.75 8 .75c1.062 0 2.281.162 3.263.53.49.183.966.434 1.332.781.376.358.655.841.655 1.439V12c0 1.084-.777 1.91-1.698 2.423-.944.526-2.2.827-3.552.827-1.352 0-2.608-.301-3.552-.827-.92-.512-1.698-1.339-1.698-2.423V3.5Zm1.5 0c0-.092.034-.204.188-.351.166-.158.44-.32.825-.464C6.03 2.397 7.062 2.25 8 2.25c.938 0 1.969.147 2.737.435.385.144.659.306.825.464.154.147.188.259.188.351 0 .092-.034.204-.188.351-.166.158-.44.32-.825.464-.768.288-1.799.435-2.737.435-.938 0-1.969-.147-2.737-.435-.385-.144-.659-.306-.825-.464-.154-.147-.188-.259-.188-.351Zm0 5.01v.99c0 .092.034.204.188.351.166.158.44.32.825.464.768.288 1.799.435 2.737.435.938 0 1.969-.147 2.737-.435.385-.144.659-.306.825-.464.154-.147.188-.259.188-.351v-.99a5.255 5.255 0 0 1-.487.21c-.982.368-2.201.53-3.263.53-1.062 0-2.281-.162-3.263-.53a5.258 5.258 0 0 1-.487-.21Zm7.5-2.01c0 .092-.034.204-.188.351-.166.158-.44.32-.825.464-.768.288-1.799.435-2.737.435-.938 0-1.969-.147-2.737-.435-.385-.144-.659-.306-.825-.464-.154-.147-.188-.259-.188-.351v-.99c.158.079.322.148.487.21.982.368 2.201.53 3.263.53 1.062 0 2.281-.162 3.263-.53.165-.062.329-.131.487-.21v.99Zm0 5.01a5.258 5.258 0 0 1-.487.21c-.982.368-2.201.53-3.263.53-1.062 0-2.281-.162-3.263-.53a5.26 5.26 0 0 1-.487-.21V12c0 .296.223.72.927 1.113.681.379 1.675.637 2.823.637s2.142-.258 2.823-.637c.704-.393.927-.817.927-1.113v-.49Z" clipRule="evenodd"></path></svg>}
-                          {feature.icon === "mail" && <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" className="h-4 w-4"><path fill="currentColor" fillRule="evenodd" d="M1 5.7c0-1.12 0-1.68.218-2.108a2 2 0 0 1 .874-.874C2.52 2.5 3.08 2.5 4.2 2.5h7.6c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874C15 4.02 15 4.58 15 5.7v4.6c0 1.12 0 1.68-.218 2.108a2 2 0 0 1-.874.874c-.428.218-.988.218-2.108.218H4.2c-1.12 0-1.68 0-2.108-.218a2 2 0 0 1-.874-.874C1 11.98 1 11.42 1 10.3V5.7Zm2.009-1.678C3.267 4.002 3.615 4 4.2 4h7.6c.585 0 .933.001 1.191.022.158.013.224.03.242.036.02.01.04.022.059.036L8 8.062 2.708 4.095a.501.501 0 0 1 .059-.036c.018-.006.084-.023.242-.036ZM2.5 5.812V10.3c0 .585.001.933.022 1.191.013.158.03.224.036.242a.5.5 0 0 0 .209.21c.018.005.084.022.242.035.258.02.606.022 1.191.022h7.6c.585 0 .933-.001 1.191-.022.158-.013.224-.03.242-.036a.5.5 0 0 0 .21-.209c.005-.018.022-.084.035-.242.02-.258.022-.606.022-1.191V5.812L8.75 9.376a1.25 1.25 0 0 1-1.5 0L2.5 5.812ZM13.238 4.06h-.003.003Zm.203 7.68v-.004a.012.012 0 0 1 0 .003Zm-.203.201-.003.002.003-.002Zm-10.476 0 .003.002-.003-.002Zm-.203-.203v.001-.003.002Zm.203-7.678h.003-.003Z" clipRule="evenodd"></path></svg>}
-                          {feature.icon === "node" && <Info className="h-4 w-4" />}
-                          {feature.icon === "pages" && (
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" className="h-4 w-4">
-                              <path fill="currentColor" d="M4 4.781a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM6.5 4.781a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM8.25 5.531a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"></path>
-                              <path fill="currentColor" fillRule="evenodd" d="M0 3.083C0 1.933.933 1 2.083 1h11.834C15.067 1 16 1.933 16 3.083v9.834c0 1.15-.933 2.083-2.083 2.083H2.083A2.083 2.083 0 0 1 0 12.917V3.083ZM2.083 2.5h11.834c.322 0 .583.261.583.583v9.834a.583.583 0 0 1-.583.583H2.083a.583.583 0 0 1-.583-.583V3.083c0-.322.261-.583.583-.583Z" clipRule="evenodd"></path>
-                            </svg>
-                          )}
-                          {feature.icon === "cpu" && <Cpu className="h-4 w-4" />}
-                          {feature.icon === "ram" && <Zap className="h-4 w-4" />}
-                          {feature.icon === "nvme" && <HardDrive className="h-4 w-4" />}
-                          {feature.icon === "bandwidth" && <Network className="h-4 w-4" />}
-                        </GrayIcon>
-                      )}
-                      <span className={cn(
-                        "text-[13px] font-medium leading-relaxed",
-                        feature.disabled ? "text-zinc-300 line-through" : "text-zinc-600 dark:text-zinc-400",
-                        feature.type === "header" && "font-bold text-[#2f1c6a] dark:text-zinc-100"
-                      )}>
-                        {Array.isArray(feature.bold) ? (
-                          feature.text.split(" ").map((word, i) => (
-                            <React.Fragment key={i}>
-                              {(feature.bold as number[]).includes(i) ? <b className="font-bold text-[#2f1c6a] dark:text-white">{word}</b> : word}{" "}
-                            </React.Fragment>
-                          ))
-                        ) : feature.bold === "all" ? (
-                          <b className="font-bold text-[#2f1c6a] dark:text-white">{feature.text}</b>
-                        ) : (
-                          feature.text
-                        )}
-                        {feature.badge && (
-                          <span className={cn(
-                            "ml-2 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase align-middle whitespace-nowrap",
-                            feature.badgeColor || "bg-[#e5e7ff] text-[#2f1c6a]"
-                          )}>
-                            {feature.badge}
-                          </span>
-                        )}
-                      </span>
+                  {plan.popular && (
+                    <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#673de6] text-white text-[10px] font-bold px-4 py-1.5 rounded-full tracking-wider">
+                      MOST POPULAR
                     </div>
-                  ))}
+                  )}
+
+                  <div className="mb-6">
+                    <span className="inline-block bg-[#e5e7ff] text-[#2f1c6a] text-[10px] font-bold px-2 py-1 rounded-md mb-3">
+                      {plan.discount}
+                    </span>
+                    <h3 className="text-2xl font-bold text-[#2f1c6a] dark:text-white mb-2">{plan.title}</h3>
+                    <p className="text-xs text-zinc-500 leading-relaxed min-h-[2.5rem]">{plan.description}</p>
+                  </div>
+
+                  <div className="flex flex-col mb-8 group relative w-fit">
+                    <span className="text-sm font-medium text-zinc-400 line-through decoration-zinc-400/50 mb-1 cursor-help">
+                      ₹ {currentPricing.originalPrice}
+                    </span>
+                    <div className="flex items-baseline gap-1 cursor-help">
+                      <span className="text-lg font-bold text-[#2f1c6a] dark:text-white">₹</span>
+                      <span className="text-4xl font-bold text-[#2f1c6a] dark:text-white">{currentPricing.price}</span>
+                      <span className="text-sm font-medium text-zinc-400 lowercase ml-1">/mo</span>
+                    </div>
+                    <PriceBreakdown original={currentPricing.originalPrice} final={currentPricing.price} />
+                  </div>
+
+                  <a
+                    href={currentPricing.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cn(
+                      "w-full py-4 rounded-xl font-bold text-sm mb-6 transition-all active:scale-95 text-center flex items-center justify-center",
+                      plan.popular
+                        ? "bg-[#673de6] text-white hover:bg-[#5832cc]"
+                        : "bg-white dark:bg-zinc-800 border-2 border-[#673de6] text-[#673de6] dark:text-indigo-400 hover:bg-[#f8f6ff]"
+                    )}
+                  >
+                    Use coupon
+                  </a>
+
+                  <p className="text-[10px] leading-relaxed text-zinc-400 mb-8 pb-8 border-b border-zinc-50 dark:border-zinc-800">
+                    {currentPricing.renewal}
+                  </p>
+
+                  <div className="space-y-4 flex-grow">
+                    {plan.features.map((feature, idx) => (
+                      <div key={idx} className="flex gap-3 items-start group">
+                        {feature.type === "success" || feature.type === "header" ? (
+                          <CheckIcon />
+                        ) : (
+                          <GrayIcon>
+                            {feature.icon === "world" && <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" className="h-4 w-4"><path fill="currentColor" fillRule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14Zm-.76-7.748V3.296c-1.14 1.236-1.775 2.6-1.944 3.96l1.944-.004Zm0 1.5-1.942.004c.17 1.356.805 2.715 1.942 3.947v-3.95ZM3.786 7.26c.142-1.44.697-2.844 1.642-4.122a5.504 5.504 0 0 0-2.879 4.124l1.237-.002ZM2.552 8.76l1.236-.002c.145 1.433.7 2.83 1.64 4.104A5.504 5.504 0 0 1 2.552 8.76ZM8.74 8.75l1.975-.003c-.17 1.371-.815 2.747-1.975 3.99V8.75Zm1.974-1.503-1.974.003V3.263c1.157 1.241 1.802 2.614 1.974 3.983Zm1.51 1.497c-.141 1.435-.694 2.835-1.633 4.11a5.504 5.504 0 0 0 2.86-4.113l-1.226.003Zm1.224-1.503-1.225.003c-.144-1.43-.696-2.825-1.632-4.096a5.504 5.504 0 0 1 2.857 4.093Z" clipRule="evenodd"></path></svg>}
+                            {feature.icon === "minus" && <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" className="h-4 w-4"><path fill="currentColor" d="M3.993 8c0 .414.335.75.75.75h6.541a.75.75 0 0 0 0-1.5H4.743a.75.75 0 0 0-.75.75Z"></path></svg>}
+                            {feature.icon === "disk" && <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" className="h-4 w-4"><path fill="currentColor" fillRule="evenodd" d="M2.75 3.5c0-.598.279-1.081.655-1.439.366-.347.842-.598 1.332-.781C5.72.912 6.938.75 8 .75c1.062 0 2.281.162 3.263.53.49.183.966.434 1.332.781.376.358.655.841.655 1.439V12c0 1.084-.777 1.91-1.698 2.423-.944.526-2.2.827-3.552.827-1.352 0-2.608-.301-3.552-.827-.92-.512-1.698-1.339-1.698-2.423V3.5Zm1.5 0c0-.092.034-.204.188-.351.166-.158.44-.32.825-.464C6.03 2.397 7.062 2.25 8 2.25c.938 0 1.969.147 2.737.435.385.144.659.306.825.464.154.147.188.259.188.351 0 .092-.034.204-.188.351-.166.158-.44.32-.825.464-.768.288-1.799.435-2.737.435-.938 0-1.969-.147-2.737-.435-.385-.144-.659-.306-.825-.464-.154-.147-.188-.259-.188-.351Zm0 5.01v.99c0 .092.034.204.188.351.166.158.44.32.825.464.768.288 1.799.435 2.737.435.938 0 1.969-.147 2.737-.435.385-.144.659-.306.825-.464.154-.147.188-.259.188-.351v-.99a5.255 5.255 0 0 1-.487.21c-.982.368-2.201.53-3.263.53-1.062 0-2.281-.162-3.263-.53a5.258 5.258 0 0 1-.487-.21Zm7.5-2.01c0 .092-.034.204-.188.351-.166.158-.44.32-.825.464-.768.288-1.799.435-2.737.435-.938 0-1.969-.147-2.737-.435-.385-.144-.659-.306-.825-.464-.154-.147-.188-.259-.188-.351v-.99c.158.079.322.148.487.21.982.368 2.201.53 3.263.53 1.062 0 2.281-.162 3.263-.53.165-.062.329-.131.487-.21v.99Zm0 5.01a5.258 5.258 0 0 1-.487.21c-.982.368-2.201.53-3.263.53-1.062 0-2.281-.162-3.263-.53a5.26 5.26 0 0 1-.487-.21V12c0 .296.223.72.927 1.113.681.379 1.675.637 2.823.637s2.142-.258 2.823-.637c.704-.393.927-.817.927-1.113v-.49Z" clipRule="evenodd"></path></svg>}
+                            {feature.icon === "mail" && <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" className="h-4 w-4"><path fill="currentColor" fillRule="evenodd" d="M1 5.7c0-1.12 0-1.68.218-2.108a2 2 0 0 1 .874-.874C2.52 2.5 3.08 2.5 4.2 2.5h7.6c1.12 0 1.68 0 2.108.218a2 2 0 0 1 .874.874C15 4.02 15 4.58 15 5.7v4.6c0 1.12 0 1.68-.218 2.108a2 2 0 0 1-.874.874c-.428.218-.988.218-2.108.218H4.2c-1.12 0-1.68 0-2.108-.218a2 2 0 0 1-.874-.874C1 11.98 1 11.42 1 10.3V5.7Zm2.009-1.678C3.267 4.002 3.615 4 4.2 4h7.6c.585 0 .933.001 1.191.022.158.013.224.03.242.036.02.01.04.022.059.036L8 8.062 2.708 4.095a.501.501 0 0 1 .059-.036c.018-.006.084-.023.242-.036ZM2.5 5.812V10.3c0 .585.001.933.022 1.191.013.158.03.224.036.242a.5.5 0 0 0 .209.21c.018.005.084.022.242.035.258.02.606.022 1.191.022h7.6c.585 0 .933-.001 1.191-.022.158-.013.224-.03.242-.036a.5.5 0 0 0 .21-.209c.005-.018.022-.084.035-.242.02-.258.022-.606.022-1.191V5.812L8.75 9.376a1.25 1.25 0 0 1-1.5 0L2.5 5.812ZM13.238 4.06h-.003.003Zm.203 7.68v-.004a.012.012 0 0 1 0 .003Zm-.203.201-.003.002.003-.002Zm-10.476 0 .003.002-.003-.002Zm-.203-.203v.001-.003.002Zm.203-7.678h.003-.003Z" clipRule="evenodd"></path></svg>}
+                            {feature.icon === "node" && <Info className="h-4 w-4" />}
+                            {feature.icon === "pages" && (
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" className="h-4 w-4">
+                                <path fill="currentColor" d="M4 4.781a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM6.5 4.781a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM8.25 5.531a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"></path>
+                                <path fill="currentColor" fillRule="evenodd" d="M0 3.083C0 1.933.933 1 2.083 1h11.834C15.067 1 16 1.933 16 3.083v9.834c0 1.15-.933 2.083-2.083 2.083H2.083A2.083 2.083 0 0 1 0 12.917V3.083ZM2.083 2.5h11.834c.322 0 .583.261.583.583v9.834a.583.583 0 0 1-.583.583H2.083a.583.583 0 0 1-.583-.583V3.083c0-.322.261-.583.583-.583Z" clipRule="evenodd"></path>
+                              </svg>
+                            )}
+                            {feature.icon === "cpu" && <Cpu className="h-4 w-4" />}
+                            {feature.icon === "ram" && <Zap className="h-4 w-4" />}
+                            {feature.icon === "nvme" && <HardDrive className="h-4 w-4" />}
+                            {feature.icon === "bandwidth" && <Network className="h-4 w-4" />}
+                          </GrayIcon>
+                        )}
+                        <span className={cn(
+                          "text-[13px] font-medium leading-relaxed",
+                          feature.disabled ? "text-zinc-300 line-through" : "text-zinc-600 dark:text-zinc-400",
+                          feature.type === "header" && "font-bold text-[#2f1c6a] dark:text-zinc-100"
+                        )}>
+                          {Array.isArray(feature.bold) ? (
+                            feature.text.split(" ").map((word, i) => (
+                              <React.Fragment key={i}>
+                                {(feature.bold as number[]).includes(i) ? <b className="font-bold text-[#2f1c6a] dark:text-white">{word}</b> : word}{" "}
+                              </React.Fragment>
+                            ))
+                          ) : feature.bold === "all" ? (
+                            <b className="font-bold text-[#2f1c6a] dark:text-white">{feature.text}</b>
+                          ) : (
+                            feature.text
+                          )}
+                          {feature.badge && (
+                            <span className={cn(
+                              "ml-2 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase align-middle whitespace-nowrap",
+                              feature.badgeColor || "bg-[#e5e7ff] text-[#2f1c6a]"
+                            )}>
+                              {feature.badge}
+                            </span>
+                          )}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         )}
       </section>
