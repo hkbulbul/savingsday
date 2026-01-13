@@ -27,16 +27,22 @@ interface Feature {
   badgeColor?: string
 }
 
+type Period = 12 | 24 | 48
+
+interface Pricing {
+  originalPrice: string
+  price: string
+  renewal: string
+  link: string
+}
+
 interface Plan {
   title: string
   description: string
   discount: string
-  originalPrice: string
-  price: string
-  renewal: string
   popular: boolean
   features: Feature[]
-  link: string
+  periods: Record<Period, Pricing>
 }
 
 const plans: Plan[] = [
@@ -44,11 +50,27 @@ const plans: Plan[] = [
     title: "Single",
     description: "A great solution for beginners",
     discount: "20% OFF",
-    originalPrice: "69.00",
-    price: "55.20",
-    renewal: "Get 48 months for ₹3,312.00 (regular price ₹19,152.00). Renews at ₹289.00/mo.",
     popular: false,
-    link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_single&period=12&referral_type=cart_link&REFERRALCODE=savingsday",
+    periods: {
+      12: {
+        originalPrice: "69.00",
+        price: "55.20",
+        renewal: "Get 48 months for ₹3,312.00 (regular price ₹19,152.00). Renews at ₹289.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_single&period=12&referral_type=cart_link&REFERRALCODE=savingsday"
+      },
+      24: {
+        originalPrice: "69.00",
+        price: "55.20",
+        renewal: "Get 48 months for ₹3,312.00 (regular price ₹19,152.00). Renews at ₹289.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_single&period=24&referral_type=cart_link&REFERRALCODE=savingsday"
+      },
+      48: {
+        originalPrice: "69.00",
+        price: "55.20",
+        renewal: "Get 48 months for ₹3,312.00 (regular price ₹19,152.00). Renews at ₹289.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_single&period=48&referral_type=cart_link&REFERRALCODE=savingsday"
+      }
+    },
     features: [
       { text: "Create 1 website", bold: [1], icon: "world" },
       { text: "No Node.js web apps", icon: "minus", disabled: true },
@@ -63,11 +85,27 @@ const plans: Plan[] = [
     title: "Premium",
     description: "Everything you need to get started",
     discount: "20% OFF",
-    originalPrice: "219.00",
-    price: "175.20",
-    renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
     popular: true,
-    link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb354-fd09-728d-8486-c8a9316ec47c",
+    periods: {
+      12: {
+        originalPrice: "219.00",
+        price: "175.20",
+        renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb777-7e64-7168-828d-fbd54963cc64"
+      },
+      24: {
+        originalPrice: "219.00",
+        price: "175.20",
+        renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb777-7e64-7168-828d-fbd54963cc64"
+      },
+      48: {
+        originalPrice: "219.00",
+        price: "175.20",
+        renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb777-7e64-7168-828d-fbd54963cc64"
+      }
+    },
     features: [
       { text: "Create up to 3 websites", bold: [2], icon: "world" },
       { text: "No Node.js web apps", icon: "minus", disabled: true },
@@ -84,11 +122,27 @@ const plans: Plan[] = [
     title: "Business",
     description: "More tools and power for growth",
     discount: "20% OFF",
-    originalPrice: "379.00",
-    price: "303.20",
-    renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
     popular: false,
-    link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb355-6f84-71c5-ae6c-dfcfade17c75",
+    periods: {
+      12: {
+        originalPrice: "379.00",
+        price: "303.20",
+        renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb777-d508-70cc-b80f-176f4beec2ab"
+      },
+      24: {
+        originalPrice: "379.00",
+        price: "303.20",
+        renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb777-d508-70cc-b80f-176f4beec2ab"
+      },
+      48: {
+        originalPrice: "379.00",
+        price: "303.20",
+        renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb777-d508-70cc-b80f-176f4beec2ab"
+      }
+    },
     features: [
       { text: "Create up to 50 websites", bold: [2], icon: "world" },
       { text: "5 Node.js web apps", bold: [0], icon: "node", badge: "NEW" },
@@ -107,11 +161,27 @@ const plans: Plan[] = [
     title: "Cloud Startup",
     description: "20X more power for your websites with Cloud hosting",
     discount: "20% OFF",
-    originalPrice: "799.00",
-    price: "639.20",
-    renewal: "Get 48 months for ₹25,034.40 (regular price ₹81,552.00). Renews at ₹1,599.00/mo.",
     popular: false,
-    link: "https://www.hostinger.in/cart?product=hosting%3Acloud_economy&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb355-8aab-7050-92cd-e756b8a5ebd3",
+    periods: {
+      12: {
+        originalPrice: "799.00",
+        price: "639.20",
+        renewal: "Get 48 months for ₹25,034.40 (regular price ₹81,552.00). Renews at ₹1,599.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Acloud_economy&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb778-26b2-7087-ac83-392bf26bf6a4"
+      },
+      24: {
+        originalPrice: "799.00",
+        price: "639.20",
+        renewal: "Get 48 months for ₹25,034.40 (regular price ₹81,552.00). Renews at ₹1,599.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Acloud_economy&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb778-26b2-7087-ac83-392bf26bf6a4"
+      },
+      48: {
+        originalPrice: "799.00",
+        price: "639.20",
+        renewal: "Get 48 months for ₹25,034.40 (regular price ₹81,552.00). Renews at ₹1,599.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Acloud_economy&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb778-26b2-7087-ac83-392bf26bf6a4"
+      }
+    },
     features: [
       { text: "Create up to 100 websites", bold: [2], icon: "world" },
       { text: "10 Node.js web apps", bold: [0], icon: "node", badge: "NEW" },
@@ -133,11 +203,27 @@ const builderPlans: Plan[] = [
     title: "Premium Website Builder",
     description: "Get the essentials to create a website",
     discount: "20% OFF",
-    originalPrice: "153.19",
-    price: "122.55",
-    renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
     popular: false,
-    link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=12&referral_type=cart_link&REFERRALCODE=savingsday",
+    periods: {
+      12: {
+        originalPrice: "153.19",
+        price: "122.55",
+        renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb779-00d5-72f6-9043-bb1fe776bca0&product_type=website-builder"
+      },
+      24: {
+        originalPrice: "153.19",
+        price: "122.55",
+        renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb779-00d5-72f6-9043-bb1fe776bca0&product_type=website-builder"
+      },
+      48: {
+        originalPrice: "153.19",
+        price: "122.55",
+        renewal: "Get 48 months for ₹5,882.40 (regular price ₹31,152.00). Renews at ₹449.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_premium&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb779-00d5-72f6-9043-bb1fe776bca0&product_type=website-builder"
+      }
+    },
     features: [
       { text: "Create 1 website", bold: [1], icon: "world" },
       { text: "5 website pages", bold: [0], icon: "pages" },
@@ -156,11 +242,27 @@ const builderPlans: Plan[] = [
     title: "Business Website Builder",
     description: "Grow with AI tools and ecommerce features",
     discount: "20% OFF",
-    originalPrice: "236.31",
-    price: "189.05",
-    renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
     popular: true,
-    link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=12&referral_type=cart_link&REFERRALCODE=savingsday",
+    periods: {
+      12: {
+        originalPrice: "236.31",
+        price: "189.05",
+        renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb779-67e2-723d-b986-1dd97ec49fd3&product_type=website-builder"
+      },
+      24: {
+        originalPrice: "236.31",
+        price: "189.05",
+        renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb779-67e2-723d-b986-1dd97ec49fd3&product_type=website-builder"
+      },
+      48: {
+        originalPrice: "236.31",
+        price: "189.05",
+        renewal: "Get 48 months for ₹9,074.40 (regular price ₹38,352.00). Renews at ₹649.00/mo.",
+        link: "https://www.hostinger.in/cart?product=hosting%3Ahostinger_business&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb779-67e2-723d-b986-1dd97ec49fd3&product_type=website-builder"
+      }
+    },
     features: [
       { text: "Create 50 websites", bold: [1], icon: "world" },
       { text: "Unlimited website pages", bold: [0], icon: "pages" },
@@ -188,11 +290,27 @@ const vpsPlans: Plan[] = [
     title: "KVM 1",
     description: "The perfect start for low-traffic websites.",
     discount: "20% OFF",
-    originalPrice: "473.81",
-    price: "379.05",
-    renewal: "Renews at ₹739.00/mo for 2 years. Cancel anytime.",
     popular: false,
-    link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_1&period=12&referral_type=cart_link&REFERRALCODE=savingsday",
+    periods: {
+      12: {
+        originalPrice: "473.81",
+        price: "379.05",
+        renewal: "Renews at ₹739.00/mo for 2 years. Cancel anytime.",
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_1&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-2a93-706e-a33f-dfca6c2e90b7"
+      },
+      24: {
+        originalPrice: "473.81",
+        price: "379.05",
+        renewal: "Renews at ₹739.00/mo for 2 years. Cancel anytime.",
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_1&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-2a93-706e-a33f-dfca6c2e90b7"
+      },
+      48: {
+        originalPrice: "473.81",
+        price: "379.05",
+        renewal: "Renews at ₹739.00/mo for 2 years. Cancel anytime.",
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_1&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-2a93-706e-a33f-dfca6c2e90b7"
+      }
+    },
     features: [
       { text: "1 vCPU cores", bold: [0], icon: "cpu" },
       { text: "4 GB RAM", bold: [0], icon: "ram" },
@@ -204,11 +322,27 @@ const vpsPlans: Plan[] = [
     title: "KVM 2",
     description: "Great performance for medium-sized projects.",
     discount: "20% OFF",
-    originalPrice: "651.94",
-    price: "521.55",
-    renewal: "Renews at ₹999.00/mo for 2 years. Cancel anytime.",
     popular: true,
-    link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_2&period=12&referral_type=cart_link&REFERRALCODE=savingsday",
+    periods: {
+      12: {
+        originalPrice: "651.94",
+        price: "521.55",
+        renewal: "Renews at ₹999.00/mo for 2 years. Cancel anytime.",
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_2&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-5e53-7206-a00a-5f200fd06834"
+      },
+      24: {
+        originalPrice: "651.94",
+        price: "521.55",
+        renewal: "Renews at ₹999.00/mo for 2 years. Cancel anytime.",
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_2&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-5e53-7206-a00a-5f200fd06834"
+      },
+      48: {
+        originalPrice: "651.94",
+        price: "521.55",
+        renewal: "Renews at ₹999.00/mo for 2 years. Cancel anytime.",
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_2&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-5e53-7206-a00a-5f200fd06834"
+      }
+    },
     features: [
       { text: "2 vCPU cores", bold: [0], icon: "cpu" },
       { text: "8 GB RAM", bold: [0], icon: "ram" },
@@ -220,11 +354,27 @@ const vpsPlans: Plan[] = [
     title: "KVM 4",
     description: "Powerful resources for high-traffic sites.",
     discount: "20% OFF",
-    originalPrice: "889.44",
-    price: "711.55",
-    renewal: "Renews at ₹1,999.00/mo for 2 years. Cancel anytime.",
     popular: false,
-    link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_4&period=12&referral_type=cart_link&REFERRALCODE=savingsday",
+    periods: {
+      12: {
+        originalPrice: "889.44",
+        price: "711.55",
+        renewal: "Renews at ₹1,999.00/mo for 2 years. Cancel anytime.",
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_4&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77b-40c6-7231-8e60-b1fa32fa0f09"
+      },
+      24: {
+        originalPrice: "889.44",
+        price: "711.55",
+        renewal: "Renews at ₹1,999.00/mo for 2 years. Cancel anytime.",
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_4&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77b-40c6-7231-8e60-b1fa32fa0f09"
+      },
+      48: {
+        originalPrice: "889.44",
+        price: "711.55",
+        renewal: "Renews at ₹1,999.00/mo for 2 years. Cancel anytime.",
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_4&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77b-40c6-7231-8e60-b1fa32fa0f09"
+      }
+    },
     features: [
       { text: "4 vCPU cores", bold: [0], icon: "cpu" },
       { text: "16 GB RAM", bold: [0], icon: "ram" },
@@ -236,11 +386,27 @@ const vpsPlans: Plan[] = [
     title: "KVM 8",
     description: "Ultimate control and power for large-scale ops.",
     discount: "20% OFF",
-    originalPrice: "1780.06",
-    price: "1424.05",
-    renewal: "Renews at ₹3,999.00/mo for 2 years. Cancel anytime.",
     popular: false,
-    link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_8&period=12&referral_type=cart_link&REFERRALCODE=savingsday",
+    periods: {
+      12: {
+        originalPrice: "1780.06",
+        price: "1424.05",
+        renewal: "Renews at ₹3,999.00/mo for 2 years. Cancel anytime.",
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_8&period=12&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-c256-7069-b2f3-d86ba44aa23e"
+      },
+      24: {
+        originalPrice: "1780.06",
+        price: "1424.05",
+        renewal: "Renews at ₹3,999.00/mo for 2 years. Cancel anytime.",
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_8&period=24&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-c256-7069-b2f3-d86ba44aa23e"
+      },
+      48: {
+        originalPrice: "1780.06",
+        price: "1424.05",
+        renewal: "Renews at ₹3,999.00/mo for 2 years. Cancel anytime.",
+        link: "https://www.hostinger.in/cart?product=vps%3Avps_kvm_8&period=48&referral_type=cart_link&REFERRALCODE=savingsday&referral_id=019bb77a-c256-7069-b2f3-d86ba44aa23e"
+      }
+    },
     features: [
       { text: "8 vCPU cores", bold: [0], icon: "cpu" },
       { text: "32 GB RAM", bold: [0], icon: "ram" },
@@ -312,6 +478,7 @@ const tabItems = [
 
 export default function HostingerPage() {
   const [activeTab, setActiveTab] = React.useState("Web hosting")
+  const [selectedPeriod, setSelectedPeriod] = React.useState<Period>(12)
   const [timeLeft, setTimeLeft] = React.useState({
     days: 1,
     hours: 14,
@@ -335,7 +502,7 @@ export default function HostingerPage() {
   const currentPlans = activeTab === "Web hosting" ? plans : activeTab === "Website Builder" ? builderPlans : activeTab === "VPS hosting" ? vpsPlans : []
 
   return (
-    <main className="min-h-screen pt-12 pb-20 bg-white dark:bg-black font-sans antialiased text-zinc-900 dark:text-zinc-100">
+    <main className="min-h-screen pt-16 pb-20 bg-white dark:bg-black font-sans antialiased text-zinc-900 dark:text-zinc-100">
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -351,13 +518,13 @@ export default function HostingerPage() {
 
             <div className="flex flex-col gap-4">
               <div className="flex items-baseline gap-2 flex-wrap group relative w-fit">
-                <span className="text-lg font-medium text-zinc-400 line-through decoration-zinc-400/50 cursor-help">₹ 69.00</span>
+                <span className="text-lg font-medium text-zinc-400 line-through decoration-zinc-400/50 cursor-help">₹ {plans[0].periods[selectedPeriod].originalPrice}</span>
                 <div className="flex items-baseline gap-1 cursor-help">
                   <span className="text-xl font-medium text-[#2f1c6a] dark:text-white">₹</span>
-                  <span className="text-5xl font-bold text-[#2f1c6a] dark:text-white">55.20</span>
+                  <span className="text-5xl font-bold text-[#2f1c6a] dark:text-white">{plans[0].periods[selectedPeriod].price}</span>
                   <span className="text-lg text-zinc-400">/mo</span>
                 </div>
-                <PriceBreakdown original="69.00" final="55.20" />
+                <PriceBreakdown original={plans[0].periods[selectedPeriod].originalPrice} final={plans[0].periods[selectedPeriod].price} />
               </div>
               <p className="text-xl md:text-2xl font-bold text-[#2f1c6a] dark:text-indigo-400">
                 +3 months free
@@ -414,7 +581,7 @@ export default function HostingerPage() {
         </h2>
 
         {/* Tab Toggle */}
-        <div className="flex p-1 bg-[#f4f5f9] dark:bg-zinc-900 rounded-2xl mb-12 overflow-x-auto max-w-full mx-4 no-scrollbar">
+        <div className="flex p-1 bg-[#f4f5f9] dark:bg-zinc-900 rounded-2xl mb-8 overflow-x-auto max-w-full mx-4 no-scrollbar">
           {tabItems.map((tab) => (
             <button
               key={tab.title}
@@ -428,6 +595,24 @@ export default function HostingerPage() {
             >
               <span className="opacity-70">{tab.icon}</span>
               {tab.title}
+            </button>
+          ))}
+        </div>
+
+        {/* Period Toggle */}
+        <div className="flex p-1 bg-zinc-100 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 rounded-xl mb-12">
+          {([12, 24, 48] as Period[]).map((p) => (
+            <button
+              key={p}
+              onClick={() => setSelectedPeriod(p)}
+              className={cn(
+                "px-6 py-2 rounded-lg transition-all duration-200 font-bold text-xs whitespace-nowrap",
+                selectedPeriod === p
+                  ? "bg-[#673de6] text-white shadow-md shadow-indigo-500/20"
+                  : "text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-100"
+              )}
+            >
+              {p} Months
             </button>
           ))}
         </div>
@@ -468,18 +653,18 @@ export default function HostingerPage() {
 
                 <div className="flex flex-col mb-8 group relative w-fit">
                   <span className="text-sm font-medium text-zinc-400 line-through decoration-zinc-400/50 mb-1 cursor-help">
-                    ₹ {plan.originalPrice}
+                    ₹ {plan.periods[selectedPeriod].originalPrice}
                   </span>
                   <div className="flex items-baseline gap-1 cursor-help">
                     <span className="text-lg font-bold text-[#2f1c6a] dark:text-white">₹</span>
-                    <span className="text-4xl font-bold text-[#2f1c6a] dark:text-white">{plan.price}</span>
+                    <span className="text-4xl font-bold text-[#2f1c6a] dark:text-white">{plan.periods[selectedPeriod].price}</span>
                     <span className="text-sm font-medium text-zinc-400 lowercase ml-1">/mo</span>
                   </div>
-                  <PriceBreakdown original={plan.originalPrice} final={plan.price} />
+                  <PriceBreakdown original={plan.periods[selectedPeriod].originalPrice} final={plan.periods[selectedPeriod].price} />
                 </div>
 
                 <a
-                  href={plan.link}
+                  href={plan.periods[selectedPeriod].link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={cn(
@@ -493,7 +678,7 @@ export default function HostingerPage() {
                 </a>
 
                 <p className="text-[10px] leading-relaxed text-zinc-400 mb-8 pb-8 border-b border-zinc-50 dark:border-zinc-800">
-                  {plan.renewal}
+                  {plan.periods[selectedPeriod].renewal}
                 </p>
 
                 <div className="space-y-4 flex-grow">
