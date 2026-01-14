@@ -22,8 +22,34 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "SavingsDay - Hostinger Coupons",
-  description: "Get the best Hostinger deals and coupon codes.",
+  metadataBase: new URL("https://savingsday.com"),
+  title: {
+    default: "SavingsDay - Best Hostinger Coupons & Deals",
+    template: "%s | SavingsDay"
+  },
+  description: "Get the best Hostinger deals, coupon codes, and promotions. Save big on your web hosting with SavingsDay.",
+  keywords: ["Hostinger coupon", "hosting deals", "savingsday", "web hosting discount"],
+  authors: [{ name: "SavingsDay Team" }],
+  creator: "SavingsDay",
+  publisher: "SavingsDay",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: "SavingsDay - Hostinger Coupons",
+    description: "Get the best Hostinger deals and coupon codes.",
+    url: "https://savingsday.com",
+    siteName: "SavingsDay",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SavingsDay - Hostinger Coupons",
+    description: "Get the best Hostinger deals and coupon codes.",
+  },
   other: {
     "msvalidate.01": "240C6768F9B045B95548549506D5D70D",
   },

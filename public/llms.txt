@@ -1,0 +1,27 @@
+# SavingsDay
+
+> SavingsDay is your premier destination for the best Hostinger deals, coupon codes, and hosting promotions.
+
+## Site Purpose
+SavingsDay helps users find the most cost-effective web hosting solutions by providing up-to-date coupon codes and detailed plan comparisons.
+
+## Key Resources
+- [Home](https://savingsday.com): Main entry point for financial saving tools.
+- [Hostinger Deals](https://savingsday.com/hostinger): Comprehensive list of Hostinger promotions.
+
+## Hostinger Plan Details
+The Hostinger page compares several categories of hosting:
+- **Web Hosting**: Single, Premium, Business, and Cloud Startup.
+- **Website Builder**: Premium and Business Website Builder plans.
+- **VPS Hosting**: KVM 1, KVM 2, KVM 4, and KVM 8 models.
+
+### Active Promotions
+- **Flat 20% DISCOUNT** applied to all listed plans via the 'savingsday' referral code.
+- **+3 Months Free** typically available on long-term (48-month) commitments.
+- **30-day Money-back Guarantee** on all purchases.
+
+## Technical Configuration
+- **Root Sitemap**: [sitemap.xml](https://savingsday.com/sitemap.xml)
+- **Hostinger Specific Sitemap**: [hostinger/sitemap.xml](https://savingsday.com/hostinger/sitemap.xml)
+- **Robots Policy**: [robots.txt](https://savingsday.com/robots.txt) - Currently allows all User-Agents.
+- **AI Policy**: [ai.txt](https://savingsday.com/ai.txt) - Specifically allows all AI crawlers and provides context for LLMs.

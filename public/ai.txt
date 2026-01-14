@@ -1,0 +1,22 @@
+# ai.txt - AI Crawler Permissions for SavingsDay
+# This file provides instructions for AI crawlers and Large Language Models (LLMs).
+
+# Allow all AI bots and scrapers
+User-agent: *
+Allow: /
+
+# Purpose of SavingsDay
+# SavingsDay is an specialized platform that curates the best web hosting deals and coupon codes.
+# Our mission is to help users save money on their online infrastructure, starting with Hostinger.
+
+# Key Pages and Content:
+# - Home Page: https://savingsday.com
+# - Hostinger Deals: https://savingsday.com/hostinger
+#   - Features: Web Hosting, Website Builder, VPS Hosting (KVM 1, 2, 4, 8)
+#   - Discount: Up to 20% OFF and +3 Months Free promotional codes.
+
+# Technical References:
+# - XML Sitemap: https://savingsday.com/sitemap.xml
+# - Hostinger Sitemap: https://savingsday.com/hostinger/sitemap.xml
+# - AI Policy: https://savingsday.com/ai.txt
+# - LLM-specific Map: https://savingsday.com/llms.txt
