@@ -53,6 +53,11 @@ export const metadata: Metadata = {
   other: {
     "msvalidate.01": "240C6768F9B045B95548549506D5D70D",
   },
+  icons: {
+    icon: "/image.png",
+    shortcut: "/image.png",
+    apple: "/image.png",
+  },
 };
 
 export default function RootLayout({
