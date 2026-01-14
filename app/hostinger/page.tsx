@@ -452,7 +452,73 @@ const tabItems = [
   }
 ]
 
+const faqs = [
+  {
+    id: "item_0",
+    question: "How many hosting and Website Builder discount codes are currently available?",
+    answer: (
+      <div className="space-y-4">
+        <p>Hostinger coupons and promo codes are not unlimited, so be sure to take advantage of the deals before they disappear.</p>
+        <p>When certain deals reach their expiration date, other web hosting, VPS, and Website Builder discounts take their place, so you’ll always find something exciting on offer.</p>
+        <p>So make sure to come back to check Hostinger discounts and deals from time to time.</p>
+      </div>
+    )
+  },
+  {
+    id: "item_1",
+    question: "Does Hostinger offer hosting or Website Builder coupons for existing customers?",
+    answer: (
+      <div className="space-y-4">
+        <p>We offer amazing renewal discounts for our web hosting, VPS hosting, and Website Builder services, which can be accessed right from hPanel. Existing customers can also use Hostinger discount codes when ordering new hosting plans.</p>
+        <p>So while we provide an exclusive sign-up hosting offer for new customers, our existing clients get great Hostinger deals too.</p>
+      </div>
+    )
+  },
+  {
+    id: "item_2",
+    question: "What kind of savings can I get with Hostinger discount codes?",
+    answer: (
+      <div className="space-y-4">
+        <p>This depends on the discounts and sales available at the time you read this.</p>
+        <p>We frequently offer customer discounts of up to 90% on certain web hosting, VPS hosting, and Website Builder plans. Other times, the hosting coupon may not be as big, but there will be a wider range of choices.</p>
+      </div>
+    )
+  },
+  {
+    id: "item_3",
+    question: "Which hosting services do you offer discounts for?",
+    answer: (
+      <div className="space-y-4">
+        <p>
+          Hostinger offers a variety of different web hosting packages, including <a href="https://www.hostinger.com/in/cloud-hosting" className="text-indigo-600 dark:text-indigo-400 hover:underline">cloud hosting</a>, <a href="https://www.hostinger.com/in/wordpress-hosting" className="text-indigo-600 dark:text-indigo-400 hover:underline">WordPress hosting</a>, <a href="https://www.hostinger.com/in/web-hosting" className="text-indigo-600 dark:text-indigo-400 hover:underline">web hosting</a>, and more. Some of these hosting plans already come with a free domain for a year and a free SSL certificate.
+        </p>
+        <p>When it comes to discounts and sales, Hostinger may offer a promo code for any one of the plans mentioned above. It depends on the current deals, which change on a regular basis.</p>
+      </div>
+    )
+  },
+  {
+    id: "item_4",
+    question: "Can I use more than one coupon at one time?",
+    answer: (
+      <div className="space-y-4">
+        <p>Hostinger coupons are limited to one per order, so unfortunately no, you cannot use multiple coupons at the same time.</p>
+      </div>
+    )
+  },
+  {
+    id: "item_5",
+    question: "Does Hostinger have frequent sales and deals?",
+    answer: (
+      <div className="space-y-4">
+        <p>Absolutely. Hostinger offers various deals and sales all the time.</p>
+        <p>Be sure to check out the discounts on this page and use the Hostinger promo codes before the expiration dates in order to get our hosting plans for the best possible price.</p>
+      </div>
+    )
+  }
+]
+
 export default function HostingerPage() {
+  const [openFaq, setOpenFaq] = React.useState<number | null>(null)
   const [activeTab, setActiveTab] = React.useState("Web hosting")
   const [selectedPeriod, setSelectedPeriod] = React.useState<Period>(48)
   const [timeLeft, setTimeLeft] = React.useState({
@@ -729,6 +795,61 @@ export default function HostingerPage() {
             })}
           </div>
         )}
+      </section>
+
+      {/* FAQ Section */}
+      <section className="max-w-4xl mx-auto px-6 py-24 border-t border-zinc-100 dark:border-zinc-800">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2f1c6a] dark:text-white mb-4">
+            Hostinger coupon codes FAQs
+          </h2>
+          <p className="text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+            Find answers to frequently asked questions about the discount codes for our yearly hosting plans.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden bg-white dark:bg-zinc-900/50 transition-all hover:border-indigo-200 dark:hover:border-indigo-900/50"
+            >
+              <button
+                onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                className="w-full flex items-center justify-between p-6 text-left group"
+                data-click-id={`hgr-coupons-faq_section-${faq.id}`}
+              >
+                <h3 className="font-bold text-[#2f1c6a] dark:text-white pr-8 text-lg">
+                  {faq.question}
+                </h3>
+                <span className={cn(
+                  "shrink-0 transition-transform duration-300 p-2 rounded-full bg-zinc-50 dark:bg-zinc-800",
+                  openFaq === index ? "rotate-180 bg-indigo-50 dark:bg-indigo-900/30" : ""
+                )}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className={cn(
+                    "w-5 h-5 transition-colors",
+                    openFaq === index ? "text-indigo-600 dark:text-indigo-400" : "text-zinc-400"
+                  )}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                className={cn(
+                  "grid transition-all duration-300 ease-in-out",
+                  openFaq === index ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                )}
+              >
+                <div className="overflow-hidden">
+                  <div className="p-6 pt-0 text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                    {faq.answer}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   )
