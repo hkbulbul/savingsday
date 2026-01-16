@@ -98,6 +98,19 @@ export default function RootLayout({
             });
           `}
         </Script>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17881062588"
+        />
+        <Script id="google-tag-script-2" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-17881062588');
+          `}
+        </Script>
         <SiteHeader />
         {children}
       </body>
