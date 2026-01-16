@@ -90,6 +90,12 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-17691416291');
+
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17691416291/2ZocCMGrpOIbEOOt9vNB',
+                'value': 1.0,
+                'currency': 'INR'
+            });
           `}
         </Script>
         <SiteHeader />
